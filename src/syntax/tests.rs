@@ -7,7 +7,7 @@ use syntax::contains_zero;
 use syntax::first_non_zero;
 use syntax::fib;
 use syntax::div;
-use syntax::getOrMinusOne;
+use syntax::get_or_minus_one;
 use syntax::double;
 
 // Expression
@@ -152,12 +152,12 @@ fn some_of_answer_if_divide_by_non_zero() {
 // It can also be unwrapped with a default if None
 #[test]
 fn minus_one_if_none() {
-  assert!(-1 == getOrMinusOne(None))
+  assert!(-1 == get_or_minus_one(None))
 }
 
 #[test]
 fn unwrap_if_some() {
-  assert!(3 == getOrMinusOne(Some(3)))
+  assert!(3 == get_or_minus_one(Some(3)))
 }
 
 // Option also has higher order functions, like map

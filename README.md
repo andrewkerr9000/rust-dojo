@@ -34,10 +34,10 @@ Some basic syntax
 =================
 
 Compile tests with
-rustc --test main.rs
+rustc --test src/main.rs
 This will produce an executable called rust-dojo. Run it to run the tests.
 
-Complete functions/mod.rs to make the tests pass!
+Complete src/functions/mod.rs to make the tests pass! See comments in src/functions/tests.rs
 
 Vague plan
 ==========
@@ -47,4 +47,5 @@ Vague plan
 * Containers
 * Types: Structs, traits
 * Concurrency
+* Unsafe, FFI
 * Attempt to use one of the half-finished libraries or frameworks. This will be fun.

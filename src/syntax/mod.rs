@@ -32,7 +32,7 @@ fn div(dividend: int, divisor: int) -> Option<int> {
   None
 }
 
-fn getOrMinusOne(val: Option<int>) -> int {
+fn get_or_minus_one(val: Option<int>) -> int {
   999
 }
 

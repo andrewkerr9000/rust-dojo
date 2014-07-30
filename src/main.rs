@@ -1,4 +1,4 @@
-#![crate_id = "rust-dojo"]
+#![crate_name = "rust-dojo"]
 mod syntax;
 
 fn main() {
