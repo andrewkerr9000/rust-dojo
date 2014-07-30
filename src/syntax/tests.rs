@@ -149,6 +149,7 @@ fn some_of_answer_if_divide_by_non_zero() {
 }
 
 // Option can be pattern matched
+// It can also be unwrapped with a default if None
 #[test]
 fn minus_one_if_none() {
   assert!(-1 == getOrMinusOne(None))

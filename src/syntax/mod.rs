@@ -56,10 +56,7 @@ fn div(dividend: int, divisor: int) -> Option<int> {
 }
 
 fn getOrMinusOne(val: Option<int>) -> int {
-  match val {
-    None    => -1,
-    Some(n) => n
-  }
+  val.unwrap_or(-1)
 }
 
 fn double(val: Option<int>) -> Option<int> {
