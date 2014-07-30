@@ -38,9 +38,9 @@ Complete functions/mod.rs to make the tests pass!
 Vague plan
 ==========
 
-Basic syntax, pattern matching, options
-Ownership, aliasing, lifetimes
-Containers
-Types: Structs, traits
-Concurrency
-Attempt to use one of the half-finished libraries or frameworks. This will be fun.
+* Basic syntax, pattern matching, options
+* Ownership, aliasing, lifetimes
+* Containers
+* Types: Structs, traits
+* Concurrency
+* Attempt to use one of the half-finished libraries or frameworks. This will be fun.
