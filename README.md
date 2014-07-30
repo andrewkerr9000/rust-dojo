@@ -10,15 +10,19 @@ https://github.com/rust-lang/rust/tree/master/src/etc
 
 Clone this repository. Preferably a branch without the answers.
 
-References
+Docs, Examples
 ==========
 
-http://doc.rust-lang.org/index.html
-http://rustbyexample.com/
-http://www.rustforrubyists.com/
-http://featherweightmusings.blogspot.co.uk/2014/04/rust-for-c-programmers-part-1-hello.html
-https://github.com/rust-lang/rust/wiki/Rust-for-CXX-programmers
-http://science.raphael.poss.name/rust-for-functional-programmers.html
+* htp://doc.rust-lang.org/index.html
+* http://rustbyexample.com/
+
+Rust for X
+==========
+
+* http://www.rustforrubyists.com/
+* http://featherweightmusings.blogspot.co.uk/2014/04/rust-for-c-programmers-part-1-hello.html
+* https://github.com/rust-lang/rust/wiki/Rust-for-CXX-programmers
+* http://science.raphael.poss.name/rust-for-functional-programmers.html
 
 Community
 =========
