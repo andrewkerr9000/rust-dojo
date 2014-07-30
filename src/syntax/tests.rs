@@ -1,11 +1,14 @@
 //glob imports are experimental and don't appear to actually work
-use functions::compare;
-use functions::compare_int;
-use functions::compare_pair;
-use functions::compare_order;
-use functions::contains_zero;
-use functions::first_non_zero;
-use functions::fib;
+use syntax::compare;
+use syntax::compare_int;
+use syntax::compare_pair;
+use syntax::compare_order;
+use syntax::contains_zero;
+use syntax::first_non_zero;
+use syntax::fib;
+use syntax::div;
+use syntax::getOrMinusOne;
+use syntax::double;
 
 // Expression
 #[test]
@@ -132,4 +135,38 @@ fn sixth_fibonacci_is_five() {
 #[test]
 fn tenth_fibonacci_is_thirtyfour() {
   assert!(34 == fib(9))
+}
+
+// Option type wraps an optional value
+#[test]
+fn none_if_divide_by_zero() {
+  assert!(None == div(1,0))
+}
+
+#[test]
+fn some_of_answer_if_divide_by_non_zero() {
+  assert!(Some(3) == div(6,2))
+}
+
+// Option can be pattern matched
+#[test]
+fn minus_one_if_none() {
+  assert!(-1 == getOrMinusOne(None))
+}
+
+#[test]
+fn unwrap_if_some() {
+  assert!(3 == getOrMinusOne(Some(3)))
+}
+
+// Option also has higher order functions, like map
+
+#[test]
+fn double_none_is_none() {
+  assert!(None == double(None))
+}
+
+#[test]
+fn double_some_is_some_of_double_wrapped() {
+  assert!(Some(6) == double(Some(3)))
 }

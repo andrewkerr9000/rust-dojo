@@ -49,3 +49,19 @@ fn fib(n: int) -> int {
     m => fib(m-1) + fib(m-2)
   }
 }
+
+fn div(dividend: int, divisor: int) -> Option<int> {
+  if divisor == 0 { None }
+  else { Some(dividend / divisor) }
+}
+
+fn getOrMinusOne(val: Option<int>) -> int {
+  match val {
+    None    => -1,
+    Some(n) => n
+  }
+}
+
+fn double(val: Option<int>) -> Option<int> {
+  val.map(|x| x * 2)
+}
