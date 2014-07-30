@@ -1,41 +1,64 @@
 mod tests;
 
 fn compare(a: int, b:int) -> bool {
-  true
+  a>b
 }
 
 fn compare_int(a: int, b: int) -> int {
-  3
+  if a>b {
+    1
+  } else {
+    0
+  }
 }
 
 fn compare_pair(pair:(int,int)) -> bool {
-  true
+  let (a,b) = pair;
+  compare(a,b)
 }
 
 fn contains_zero(pair:(int,int)) -> bool {
-  true
+  match pair {
+    (0,_) => true,
+    (_,0) => true,
+    _     => false
+  }
 }
 
 fn first_non_zero(pair:(int,int)) -> int {
-  7
+  match pair {
+    (0,a) => a,
+    (a,0) => a,
+    _     => 0
+  }
 }
 
 fn compare_order(pair:(int,int)) -> int {
-  94
+  match pair {
+    (a,b) if a>b  => 1,
+    (a,b) if a<b  => -1,
+    (a,b) if a==b => 0,
+    _             => 0
+  }
 }
 
 fn fib(n: int) -> int {
-  -100
+  match n {
+    0 => 0,
+    1 => 1,
+    m => fib(m-1) + fib(m-2)
+  }
 }
 
 fn div(dividend: int, divisor: int) -> Option<int> {
-  None
+  if divisor == 0 { None }
+  else { Some(dividend / divisor) }
 }
 
 fn get_or_minus_one(val: Option<int>) -> int {
-  999
+  val.unwrap_or(-1)
 }
 
 fn double(val: Option<int>) -> Option<int> {
-  None
+  val.map(|x| x * 2)
 }
