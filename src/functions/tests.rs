@@ -4,8 +4,8 @@ use functions::compare_int;
 use functions::compare_pair;
 use functions::compare_order;
 use functions::contains_zero;
-use functions::fib;
 use functions::first_non_zero;
+use functions::fib;
 
 // Expression
 #[test]
@@ -96,7 +96,7 @@ fn compare_order_minus_1_if_second_greater() {
   assert!(-1 == compare_order((87,111)))
 }
 
-// Fibonacci
+// Fibonacci, zero-based
 // current Rust does not provide a way to guarantee tail call optimisation
 
 #[test]

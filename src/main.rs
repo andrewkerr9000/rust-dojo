@@ -1,6 +1,6 @@
-#![crate_id = "dojo1"]
+#![crate_id = "rust-dojo"]
 mod functions;
-mod types;
+mod collections;
 
 fn main() {
   println!("This was compiled without tests. Use\nrustc --test main.rs")
