@@ -13,7 +13,7 @@ Clone this repository. Preferably a branch without the answers.
 Docs, Examples
 ==========
 
-* htp://doc.rust-lang.org/index.html
+* http://doc.rust-lang.org/index.html
 * http://rustbyexample.com/
 
 Rust for X
