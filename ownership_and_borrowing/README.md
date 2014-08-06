@@ -3,7 +3,7 @@ Ownership, aliasing, lifetimes
 
 Rust's USP is a combination of ML level safety and C level runtime overhead.
 
-This is enabled by determining the lifetime of resources (heap memory, file handles etc) statically, which is made possible by controlling ownership and aliasing of variables. Sometimes the compiler needs help with named lifetimes, but there is a proposal to improve inferrence so this is needed much less often.
+This is enabled by determining the lifetime of resources (heap memory, file handles etc) statically, which is made possible by controlling ownership and aliasing of variables.
 
 This dojo:
 ======
@@ -18,7 +18,6 @@ Outline
 * Moving ownership of box
 * Passing into a function moves ownership
 * Destructors
-* Named lifetimes
 
 Pointers not in this exercise
 =========
