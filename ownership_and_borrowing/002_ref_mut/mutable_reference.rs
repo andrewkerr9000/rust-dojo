@@ -9,9 +9,10 @@ fn main() {
   println!("data has been mutated to {}", data);
   {
     let ref_data = &mut data;
-    println!("mut ref to data points to {}", ref_data);
+    println!("mutable ref to data points to {}", ref_data);
     *ref_data +=2;
-    println!("ref data has been mutated to {}", ref_data);
+    println!("data accessed via ref_data is now {}", ref_data);
+    //println!("data is {}", data);
   }
   println!("data ends as {}", data);
 }

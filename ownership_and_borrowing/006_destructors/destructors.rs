@@ -21,6 +21,7 @@ impl Drop for Test {
 //Add the following characters:
 // {
 // }
+#[allow(unused_variable)]
 fn main() {
   {
     let foo = Test;
