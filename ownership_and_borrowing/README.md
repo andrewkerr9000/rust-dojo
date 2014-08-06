@@ -8,7 +8,7 @@ This is enabled by determining the lifetime of resources (heap memory, file hand
 This dojo:
 ======
 
-Each task is in a separate sub directory. Existing code will not compile. Get it to compile and ensure any tests pass.
+Each task is in a separate sub directory. Existing code will not compile. Get it to compile. There are no tests.
 
 Outline
 =====

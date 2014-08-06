@@ -4,7 +4,7 @@
 // If a data structure is sufficiently huge we may want to pass is around by references
 // We could check performance implications with the built in micro-benchmarking functionality
 // A reference, aka borrowed pointer is immutable and aliasable
-// This is the most common type of pointer
+// This is the most common pointer
 // the sigil & denotes a reference
 // the sigil * dereferences a reference, but dereferencing can be implicit
 
