@@ -23,9 +23,7 @@ impl Drop for Test {
 // }
 #[allow(unused_variable)]
 fn main() {
-  {
-    let foo = Test;
-    println!("1");
-  }
+  let foo = Test;
+  println!("1");
   println!("3");
 }

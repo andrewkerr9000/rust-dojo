@@ -26,6 +26,6 @@ println!("Do we need to explicitly deref to acces {}?", big);
 // Plz to modfy only here kthnx 
 fn main() {
   let like_totally_huge = ReallyBigDataStructure {x: 3};
-  access_really_big_data_structure(&like_totally_huge);
-  access_really_big_part_of_really_big_data_structure(&like_totally_huge.x);
+  access_really_big_data_structure(like_totally_huge);
+  access_really_big_part_of_really_big_data_structure(like_totally_huge.x);
 }

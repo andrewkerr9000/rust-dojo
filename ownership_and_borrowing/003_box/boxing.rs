@@ -11,11 +11,11 @@
 
 enum MyLinkedList<T> {
   Nil,
-  Cons(T, Box<MyLinkedList<T>>)
+  Cons(T,<MyLinkedList<T>)
 }
 
 fn main() {
-  let list = Cons(2i, box Cons(6i, box Nil));
+  let list = Cons(2i, Cons(6i, Nil));
   println!("We made a list!");
   print_list(list);
   
@@ -25,7 +25,7 @@ fn main() {
       Nil => println!("End of list"),
       Cons(value, next) => {
 	println!("Contains value {}", value);
-	print_list(*next);
+	print_list(next);
       }
     }
   }

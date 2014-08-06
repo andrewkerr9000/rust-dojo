@@ -9,6 +9,6 @@ fn do_something(y: &int) {
 
 fn main() {
   let x = box 7i;
-  do_something(&*x); // Modify here
+  do_something(x); // Modify here
   println!("x is {}",x);
 }

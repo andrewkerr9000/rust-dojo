@@ -12,7 +12,7 @@ fn main() {
     println!("mutable ref to data points to {}", ref_data);
     *ref_data +=2;
     println!("data accessed via ref_data is now {}", ref_data);
-    //println!("data is {}", data);
+    println!("data is {}", data);
   }
   println!("data ends as {}", data);
 }
