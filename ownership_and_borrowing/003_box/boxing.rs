@@ -1,8 +1,11 @@
 #![crate_name = "boxing"]
 
-// Boxing places data on heap instead of stack
+// Boxing places a variable on the heap in its own location
+// If a variable x contains a boxed variable it contains a pointer to the data in y instead of the data to y
+// In Java objects are always boxed which can have a detrimental performance impact as sequential RAM access is faster than random access
+
 // A boxed pointer is also known as an owned pointer
-// The keyword box boxes
+// The keyword "box" boxes
 // A boxed pointer to a type T has type Box<T>
 // Boxed pointers can also be dereferenced with *
 // ~ is deprecated
