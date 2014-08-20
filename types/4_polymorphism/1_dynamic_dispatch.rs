@@ -29,8 +29,8 @@ impl MyTrait for MySecondStruct {
 // We call it with a Vector of MyTrait trait objects
 // which have unknown size at compile time
 // because they could be either MyFirstStruct or MySecondStruct
-fn dynamic_dispatch(vals: Vec<&MyTrait>) -> int {
-  vals.iter().map(|&val| val.value()).sum()
+fn dynamic_dispatch(vals: Vec<MyTrait>) -> int {
+  vals.iter().map(|val| val.value()).sum()
 }
 
 fn main() {
@@ -39,5 +39,5 @@ fn main() {
   
   // To cast variable v to trait T use
   // v as T
-  println!("Some calc on 1st and 2nd: {}", dynamic_dispatch(vec!(&foo as &MyTrait,&bar as &MyTrait)));
+  println!("Some calc on 1st and 2nd: {}", dynamic_dispatch(vec!(foo,bar)));
 }

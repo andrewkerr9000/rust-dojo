@@ -7,11 +7,7 @@ struct MyStruct {
   x: int
 }
 
-impl MyStruct {
-  fn add(&mut self, y:int) {
-    self.x += y;
-  }
-}
+// implement method here
 
 fn main() {
   let mut foo = MyStruct{x:1};

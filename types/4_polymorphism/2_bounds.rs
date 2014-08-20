@@ -21,7 +21,7 @@ impl Default for MyFirstStruct {
   }
 }
 
-fn difference_from_default<T: MyTrait + Default>(val: T) -> int {
+fn difference_from_default(val: T) -> int {
   let def: T = Default::default();
   def.value() - val.value()
 }

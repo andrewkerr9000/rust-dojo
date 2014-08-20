@@ -4,15 +4,6 @@
 
 // We need to define and implement a trait.
 
-trait IncrementableBySeventeen {
-  fn increment_by_seventeen(&mut self);
-}
-
-impl IncrementableBySeventeen for int {
-  fn increment_by_seventeen(&mut self) {
-    *self += 17;
-  }
-}
 
 fn main() {
   let mut foo: int = 3;

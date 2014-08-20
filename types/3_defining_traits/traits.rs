@@ -4,9 +4,7 @@ struct MyFirstStruct {
   x: int
 }
 
-trait MyTrait {
-  fn value(&self) -> int;
-}
+// define MyTrait
 
 impl MyTrait for MyFirstStruct {
   fn value(&self) -> int {

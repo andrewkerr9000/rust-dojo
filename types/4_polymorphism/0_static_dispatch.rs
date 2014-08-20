@@ -27,7 +27,7 @@ impl MyTrait for MySecondStruct {
 // This function uses static dispatch for value(), so has no more overhead than any other function call
 // Therefore this is prefered if possible
 // Compiler creates one version of the function for each type T implementing MyTrait
-fn static_dispatch<T: MyTrait>(val: T) -> int {
+fn static_dispatch(val: T) -> int {
   val.value() * 2
 }
 

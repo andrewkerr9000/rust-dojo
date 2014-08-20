@@ -8,15 +8,8 @@ use std::default::Default;
 
 // Implement Default for MyStruct
 
-
 struct MyStruct {
   x: int
-}
-
-impl Default for MyStruct {
-  fn default() -> MyStruct {
-    MyStruct{x: 99}
-  }
 }
 
 fn main() {

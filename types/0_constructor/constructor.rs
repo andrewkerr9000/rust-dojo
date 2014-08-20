@@ -11,11 +11,7 @@ struct MyStruct {
   x: int
 }
 
-impl MyStruct {
-  fn new(y: int) -> MyStruct {
-    MyStruct{x: y}
-  }
-}
+// implement here
 
 fn main() {
   let foo = MyStruct::new(1);
