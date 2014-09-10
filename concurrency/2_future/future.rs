@@ -15,9 +15,9 @@ fn add_one_very_slowly(n: int) -> int {
 
 fn main() {
   let start = time::precise_time_s();
-  let mut value_1 = Future::spawn(proc() add_one_very_slowly(7));
-  let mut value_2 = Future::spawn(proc() add_one_very_slowly(13));
-  println!("We added one to some numbers and got {} and {}", value_1.get(),value_2.get());
+  let value_1 = add_one_very_slowly(7);
+  let value_2 = add_one_very_slowly(13);
+  println!("We added one to some numbers and got {} and {}", value_1,value_2);
   let end = time::precise_time_s();
   println!("It took {} seconds. Can you halve that time? Yes you can!", end - start);
 }

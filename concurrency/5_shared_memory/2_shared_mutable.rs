@@ -13,24 +13,22 @@
 use std::sync::{Arc,Future,Mutex};
 
 fn main() {
-  let foo = Arc::new(Mutex::new(vec!(1i,2,3)));
+  let mut foo = Arc::new(vec!(1i,2,3));
 
-  let bar = foo.clone();
+  let mut bar = foo.clone();
   let mut f1 = Future::spawn(proc() {
-    let mut val = bar.lock();
-    println!("I captured {}", *val);
-    val.push(4);
+    println!("I captured {}", *bar);
+    bar.push(4);
   });
 
-  let baz = foo.clone();
+  let mut baz = foo.clone();
   let mut f2 = Future::spawn(proc() {
-    let mut val = baz.lock();
-    println!("Whereas I captured {}", *val);
-    val.push(5);
+    println!("Whereas I captured {}", *baz);
+    baz.push(5);
   });
 
   f1.get();
   f2.get();
 
-  println!("Final vector is {}", *(foo.lock()));
+  println!("Final vector is {}", *foo);
 }

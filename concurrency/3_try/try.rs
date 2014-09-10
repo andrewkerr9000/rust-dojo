@@ -10,7 +10,7 @@
 // Where Java may use a checked exception Rust returns a Result
 // http://doc.rust-lang.org/std/result/type.Result.html
 // http://rustbyexample.com/result.html
-
+#![crate_name = "try"]
 use std::rand;
 use std::task::try;
 
@@ -26,7 +26,7 @@ fn really_reliable_computation() -> uint {
 
 // Modify me
 fn hammer_it_until_it_works() -> uint {
-  try(really_reliable_computation).unwrap_or_else(|_| hammer_it_until_it_works())
+  really_reliable_computation()
 }
 
 fn main() {

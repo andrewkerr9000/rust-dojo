@@ -8,15 +8,15 @@
 use std::sync::Arc;
 
 fn main() {
-  let foo = Arc::new(vec!(1i,2,3));
+  let foo = vec!(1i,2,3);
 
-  let bar = foo.clone();
+
   spawn(proc() {
-    println!("I captured {}", *bar);
+    println!("I captured {}", foo);
   });
 
-  let baz = foo.clone();
+
   spawn(proc() {
-    println!("I also captured {}", *baz);
+    println!("I also captured {}", foo);
   });
 }

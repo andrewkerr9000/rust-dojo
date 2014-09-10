@@ -5,11 +5,9 @@
 use std::rand::distributions::{IndependentSample, Range};
 
 fn main() {
-  let (tx, rx): (Sender<int>, Receiver<int>) = channel();
-
   spawn(proc() {
     loop {
-      let val = rx.recv();
+      let val = 0i; // get this from the other task
       match val {
 	0 => {
 	  println!("Recieved: {}, exiting",val);
@@ -25,7 +23,7 @@ fn main() {
     let mut rng = std::rand::task_rng();
     loop {
       let randon_number = between.ind_sample(&mut rng);
-      tx.send(randon_number);
+      // send this to the other task
     }
   });
 }
