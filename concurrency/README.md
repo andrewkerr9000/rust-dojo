@@ -6,7 +6,7 @@ You will need a recent nightly build (not 0.11) or stuff won't build. WELCOME TO
 Threads
 ===
 
-In the olden days Rust used green (userspace) threads running over multiple OS threads, similar to Go. Native (OS) threads were introduced later, and then became the default. Now green threads are being pushed out of the standard library, as they have various drawbacks and in the Rust memory model seem to have no advantages.
+In the olden days Rust used green (userspace) threads running over multiple OS threads, similar to Go. Native (OS) threads were introduced later, and then became the default with a common API. Now green threads are being pushed out of the standard library, as they have various drawbacks (including the need to maintain a common API) and the current implementation is not actually lighter than native threads.
 
 AIO
 ===
@@ -21,8 +21,8 @@ Concurrency
 * try
 * message passing
 * shared memory
-** arc
-** mutex
+  * arc
+  * mutex
 
 
 https://www.youtube.com/watch?v=oAZ7F7bqT-o
