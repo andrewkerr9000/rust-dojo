@@ -22,3 +22,9 @@ types/default_implementations/default_implementations
 types/inheritance/inheritance
 types/4_polymorphism/bounds
 types/4_polymorphism/traits
+concurrency/4_message_passing/message_passing
+concurrency/5_shared_memory/shared_mutable_memory
+concurrency/5_shared_memory/shared_memory
+concurrency/3_try/try
+concurrency/2_future/futures
+concurrency/1_task/tasks
